@@ -4,12 +4,6 @@
     "codelyzer"
   ],
   "rules": {
-    "align": {
-      "options": [
-        "parameters",
-        "statements"
-      ]
-    },
     "array-type": false,
     "arrow-return-shorthand": true,
     "curly": true,
@@ -21,17 +15,11 @@
       true,
       "rxjs/Rx"
     ],
-    "import-spacing": true,
     "indent": {
       "options": [
         "spaces"
       ]
     },
-    "max-classes-per-file": false,
-    "max-line-length": [
-      true,
-      140
-    ],
     "member-ordering": [
       true,
       {
@@ -64,15 +52,6 @@
       true,
       "as-needed"
     ],
-    "quotemark": [
-      true,
-      "single"
-    ],
-    "semicolon": {
-      "options": [
-        "always"
-      ]
-    },
     "space-before-function-paren": {
       "options": {
         "anonymous": "never",
@@ -109,16 +88,6 @@
         "ban-keywords",
         "check-format",
         "allow-pascal-case"
-      ]
-    },
-    "whitespace": {
-      "options": [
-        "check-branch",
-        "check-decl",
-        "check-operator",
-        "check-separator",
-        "check-type",
-        "check-typecast"
       ]
     },
     "component-class-suffix": true,
