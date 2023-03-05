@@ -7,6 +7,7 @@ To connect Canadian experiences with Canadian customers with the Canadian Tire R
 3. Finally, the platform will be built with the latest security standards to ensure customer data is protected. This will include encryption, access control, and data backups. The platform will also comply with all relevant privacy laws and regulations.
 
 Potential Usages in future (using GraphAPI and Canadian Tire Families API, will work and a unified source to connect): 
+
 4. The platform will use connectivity technologies such as chatbots, video conferencing, and scheduling tools to connect customers with store staff and Canadian Tire employees outside the store. Customers can use these tools to get product recommendations, ask questions, and get support. This will ensure a seamless customer experience and improve customer satisfaction.
 5. To ensure effective collaboration, the platform will have a built-in task management system that will enable store staff and Canadian Tire employees to assign tasks, set deadlines, and collaborate on projects. This will ensure that everyone is on the same page and tasks are completed efficiently.
 6. The platform will also have a customer support system that will provide 24/7 support to customers. Customers can use this system to report issues, ask questions, and get support. The system will use automation to route requests to the right department or person, reducing response times and improving customer satisfaction.
