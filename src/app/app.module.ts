@@ -14,8 +14,11 @@ import { ProfileComponent } from './profile/profile.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { IPublicClientApplication, PublicClientApplication, InteractionType, BrowserCacheLocation, LogLevel } from '@azure/msal-browser';
 import { MsalGuard, MsalInterceptor, MsalBroadcastService, MsalInterceptorConfiguration, MsalModule, MsalService, MSAL_GUARD_CONFIG, MSAL_INSTANCE, MSAL_INTERCEPTOR_CONFIG, MsalGuardConfiguration, MsalRedirectComponent } from '@azure/msal-angular';
+import {LayoutModule} from "./layout/layout-module";
+import {ServicesModule} from "./services/services-module";
+import {UsersModule} from "./users/users-module";
 
-const isIE = window.navigator.userAgent.indexOf("MSIE ") > -1 || window.navigator.userAgent.indexOf("Trident/") > -1;
+const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigator.userAgent.indexOf("Trident/") > -1;
 
 export function loggerCallback(logLevel: LogLevel, message: string) {
   console.log(message);
@@ -53,10 +56,10 @@ export function MSALInterceptorConfigFactory(): MsalInterceptorConfiguration {
 }
 
 export function MSALGuardConfigFactory(): MsalGuardConfiguration {
-  return { 
+  return {
     interactionType: InteractionType.Redirect,
     authRequest: {
-      scopes: ['user.read']
+      scopes: ['user.read', 'user.readwrite', 'email', 'openid', 'offline_access', 'profile']
     }
   };
 }
@@ -75,6 +78,9 @@ export function MSALGuardConfigFactory(): MsalGuardConfiguration {
     MatToolbarModule,
     MatListModule,
     HttpClientModule,
+    LayoutModule,
+    ServicesModule,
+    UsersModule,
     MsalModule
   ],
   providers: [
