@@ -8,7 +8,7 @@ type ProfileType = {
   surname?: string,
   userPrincipalName?: string,
   id?: string
-}
+};
 
 @Component({
   selector: 'app-profile',

@@ -15,8 +15,10 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { IPublicClientApplication, PublicClientApplication, InteractionType, BrowserCacheLocation, LogLevel } from '@azure/msal-browser';
 import { MsalGuard, MsalInterceptor, MsalBroadcastService, MsalInterceptorConfiguration, MsalModule, MsalService, MSAL_GUARD_CONFIG, MSAL_INSTANCE, MSAL_INTERCEPTOR_CONFIG, MsalGuardConfiguration, MsalRedirectComponent } from '@azure/msal-angular';
 import {LayoutModule} from "./layout/layout-module";
-// import {ServicesModule} from "./services/services-module";
-// import {UsersModule} from "./users/users-module";
+import {UsersModule} from "./users/users-module";
+import {CtcApiService} from "./service/ctc-api.service";
+import {ResourceService} from "./service/resource.service";
+import {UserServiceApi} from "./service/user-service-api";
 
 const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigator.userAgent.indexOf("Trident/") > -1;
 
@@ -79,8 +81,7 @@ export function MSALGuardConfigFactory(): MsalGuardConfiguration {
     MatListModule,
     HttpClientModule,
     LayoutModule,
-    // ServicesModule,
-    // UsersModule,
+    UsersModule,
     MsalModule
   ],
   providers: [
