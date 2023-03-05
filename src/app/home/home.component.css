@@ -1,0 +1,14 @@
+span {
+
+}
+
+p {
+}
+
+.welcome {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  border: 0.5em mediumpurple;
+}

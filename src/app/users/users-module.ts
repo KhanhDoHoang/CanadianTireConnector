@@ -9,12 +9,15 @@ import {MatTableModule} from "@angular/material/table";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {SharedModule} from "../shared/shared-module";
 import {MatTabsModule} from "@angular/material/tabs";
+import * as CanvasJSAngularChart from '../../assets/canvasjs.angular.component';
+const CanvasJSChart = CanvasJSAngularChart.CanvasJSChart;
 
 @NgModule({
   declarations: [
     DashboardComponent,
     PreferenceComponent,
     CalendarComponent,
+    CanvasJSChart
   ],
     imports: [
         CommonModule,
