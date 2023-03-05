@@ -1,85 +1,46 @@
----
-page_type: sample
-languages:
-- javascript
-- typescript
-products:
-- angular
-- ms-graph
-- azure-active-directory
-description: "Demonstrates how to use MSAL Angular v2 to login, logout, protect a route, and acquire an access token for a protected resource such as Microsoft Graph."
-urlFragment: "ms-identity-javascript-angular-spa"
----
+# Hack The Hill Challange: Canadian Tire User Connector
 
-# Angular single-page application built with MSAL Angular v2 and Microsoft identity platform
+To connect Canadian experiences with Canadian customers with the Canadian Tire Retail family using connectivity technologies, the following steps can be taken:
 
-This sample demonstrates how to use MSAL Angular v2 to login, logout, conditionally render components to authenticated users, and acquire an access token for a protected resource such as Microsoft Graph.
+1. Create a unified platform for Canadian Tire Retail family that integrates all its services and products in one place. This will include Canadian Tire, Sport Chek, Atmosphere, Mark’s, Part Source, Party City, Gas+, and any other services that are part of the Canadian Tire family. The platform can be built using a modern technology stack that is scalable and flexible.
+2. The platform will provide a personalized experience to customers by leveraging customer data and preferences. The platform will gather data such as shopping history, preferences, and interests, and use it to offer personalized product recommendations, promotions, and discounts. This will enhance the customer shopping experience and make it more efficient.
+3. Finally, the platform will be built with the latest security standards to ensure customer data is protected. This will include encryption, access control, and data backups. The platform will also comply with all relevant privacy laws and regulations.
 
-## Features
+Potential Usages in future (using GraphAPI and Canadian Tire Families API, will work and a unified source to connect): 
+4. The platform will use connectivity technologies such as chatbots, video conferencing, and scheduling tools to connect customers with store staff and Canadian Tire employees outside the store. Customers can use these tools to get product recommendations, ask questions, and get support. This will ensure a seamless customer experience and improve customer satisfaction.
+5. To ensure effective collaboration, the platform will have a built-in task management system that will enable store staff and Canadian Tire employees to assign tasks, set deadlines, and collaborate on projects. This will ensure that everyone is on the same page and tasks are completed efficiently.
+6. The platform will also have a customer support system that will provide 24/7 support to customers. Customers can use this system to report issues, ask questions, and get support. The system will use automation to route requests to the right department or person, reducing response times and improving customer satisfaction.
 
-This sample demonstrates the following MSAL Angular concepts:
+Key people involved in this platform will include:
 
-* Configuration
-* Login
-* Logout
-* Protecting a route
-* Acquiring an access token and calling Microsoft Graph
+- Customers
+- Store staff
+- Canadian Tire employees outside the store, including customer support and other corporate office roles
 
-## Contents
+Building a proof of concept will involve developing a prototype of the platform with a subset of features to demonstrate its feasibility. This can be done by building a Minimum Viable Product (MVP) and testing it with a small group of customers and store staff.
 
-| File/folder       | Description                                |
-|-------------------|--------------------------------------------|
-| `AppCreationScripts` | Contains automation scripts for Powershell users (can be safely removed if desired). |
-| `src`             | Sample source code.                        |
-| `.editorconfig`   | Defines editor config settings.            |
-| `.gitignore`      | Define what to ignore at commit time.      |
-| `angular.json`    | Angular configuration file.                |
-| `browserslist`    | BrowsersList configuration file.           |
-| `CHANGELOG.md`    | List of changes to the sample.             |
-| `CONTRIBUTING.md` | Guidelines for contributing to the sample. |
-| `karma.conf.js`   | Configuration for the karma test runner.   |
-| `LICENSE`         | The license for the sample.                |
-| `ng_README.md`    | README describing how to run the sample    |
-| `package.json`    | Package manifest for npm.                  |
-| `README.md`       | This README file.                          |
-| `tsconfig.*.json` | TypeScript configuration files.            |
-| `tslint.json`     | TS Lint configuration files.               |
+Some of the high-level benefits of this platform include:
 
-**Note:** This sample's structure was generated with the [Angular CLI](https://cli.angular.io/).
+- Enhanced customer experience and satisfaction
+- Increased efficiency and productivity for store staff and Canadian Tire employees
+- Improved collaboration and communication between different departments and people
+- Increased revenue through personalized product recommendations and promotions
+- Improved security and compliance with privacy laws and regulations.
 
-## Getting Started
+The costs of building and maintaining this platform will depend on the technology stack used, the size of the team involved, and other factors. However, the benefits of the platform are likely to outweigh the costs in the long run.
 
-### Prerequisites
+Angular is a popular front-end framework for building web applications. It allows developers to create responsive and interactive user interfaces that can run on multiple platforms, including web browsers and mobile devices.
 
-[Node.js](https://nodejs.org/en/) must be installed to run this sample.
+Microsoft Graph is a powerful set of APIs that developers can use to access data and services provided by Microsoft 365, including email, calendars, contacts, files, and more. By integrating with Microsoft Graph, developers can build applications that can connect to Microsoft 365 and access its data and services.
 
-### Setup
+To build an MVP for a unified platform using Angular and Microsoft Graph, developers can follow these steps:
 
-1. [Register a new application](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-app-registration) in the [Azure Portal](https://portal.azure.com). Ensure that the application is enabled for the [authorization code flow with PKCE](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-auth-code-flow). This will require that you redirect URI configured in the portal is of type `SPA`.
-1. Clone this repository `git clone https://github.com/Azure-Samples/ms-identity-javascript-angular-spa.git`
-1. Open the [/src/app/app.module.ts](./src/app/app.module.ts) file and provide the required configuration values.
-    1. Replace the string `"Enter_the_Application_Id_Here"` with your app/client ID on AAD Portal.
-    1. Replace the string `"Enter_the_Cloud_Instance_Id_HereEnter_the_Tenant_Info_Here"` with `"https://login.microsoftonline.com/common/"`
-    > :information_source: if you would like to sign-in users with your tenant only, use your tenant ID instead of `common`.
-    1. Replace the string `"Enter_the_Redirect_Uri_Here"` with the redirect uri you setup on AAD Portal.
-    1. Replace the string `"Enter_the_Graph_Endpoint_Herev1.0/me"` with `"https://graph.microsoft.com/v1.0/me"`
-1. Open the [/src/app/profile/profile.component.ts](./src/app/profile/profile.component.ts) file and provide the required configuration value.
-    1. Replace the string `"Enter_the_Graph_Endpoint_Herev1.0/me"` with `"https://graph.microsoft.com/v1.0/me"`
-1. On the command line, navigate to the root of the repository, and run `npm install` to install the project dependencies via npm.
+1. Set up an Angular development environment on a local machine.
+2. Create an Angular application with the necessary components, services, and routing.
+3. Integrate Microsoft Graph API into the Angular application.
+4. Use Microsoft Graph API to retrieve data and services from Microsoft 365: Microsoft Graph API allows you to access data and services from various Microsoft 365 applications, including email, calendar events, contacts, OneDrive, SharePoint, and more. For example, you can use the API to retrieve a user's emails, calendar events, or contacts.
+5. Use the retrieved data and services to enhance the user experience: Once you have retrieved the data and services from Microsoft 365, you can use them to enhance the user experience in your application. For example, you can display a user's upcoming calendar events within your application, allowing them to quickly see what they have planned for the day.
+6. Implement features that allow users to interact with the retrieved data and services: With the data and services retrieved from Microsoft 365, you can implement features that allow users to interact with them. For example, you can allow users to schedule a meeting directly from your application by accessing their calendar events and adding a new event. You can also allow users to send an email from within your application by accessing their email data.
+7. Test and refine the application to ensure it provides a seamless and efficient experience for users.
 
-> :information_source: To configure this app for tenants on Sovereign/National clouds, see: [Use MSAL in a national cloud environment](https://docs.microsoft.com/azure/active-directory/develop/msal-national-cloud)
-
-## Run the sample
-
-1. Start the sample application with `npm start`.
-2. In your browser, navigate to [http://localhost:4200](http://localhost:4200).
-
-## Contributing
-
-If you'd like to contribute to this sample, see [CONTRIBUTING.MD](./CONTRIBUTING.md).
-
-## Code of Conduct
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+In terms of feasibility, building an MVP for a unified platform using Angular and Microsoft Graph is a feasible solution, as both technologies are widely used and have extensive documentation and community support. The high-level benefits include a unified platform that can connect to Microsoft 365 and provide users with a seamless experience across multiple devices. The costs would depend on the scope and complexity of the application, as well as the resources required to develop and maintain it.
