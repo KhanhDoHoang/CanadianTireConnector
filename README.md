@@ -4,7 +4,6 @@ To connect Canadian experiences with Canadian customers with the Canadian Tire R
 
 1. Create a unified platform for Canadian Tire Retail family that integrates all its services and products in one place. This will include Canadian Tire, Sport Chek, Atmosphere, Mark’s, Part Source, Party City, Gas+, and any other services that are part of the Canadian Tire family. The platform can be built using a modern technology stack that is scalable and flexible.
 2. The platform will provide a personalized experience to customers by leveraging customer data and preferences. The platform will gather data such as shopping history, preferences, and interests, and use it to offer personalized product recommendations, promotions, and discounts. This will enhance the customer shopping experience and make it more efficient.
-3. Finally, the platform will be built with the latest security standards to ensure customer data is protected. This will include encryption, access control, and data backups. The platform will also comply with all relevant privacy laws and regulations.
 
 Potential Usages in future (using GraphAPI and Canadian Tire Families API, will work and a unified source to connect): 
 
