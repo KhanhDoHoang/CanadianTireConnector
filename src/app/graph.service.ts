@@ -6,6 +6,7 @@ import * as MicrosoftGraph from '@microsoft/microsoft-graph-types';
 
 import { AuthService } from './auth.service';
 import { AlertsService } from './alerts.service';
+import {MailFolder, Message} from "@microsoft/microsoft-graph-types";
 
 @Injectable({
   providedIn: 'root',
@@ -65,5 +66,32 @@ export class GraphService {
     } catch (error) {
       throw Error(JSON.stringify(error, null, 2));
     }
+  }
+
+  async getMailMessages(): Promise<MicrosoftGraph.Message[] | undefined>{
+    if (!this.authService.graphClient) {
+      this.alertsService.addError('Graph client is not initialized.');
+      return undefined;
+    }
+    try {
+      // GET /me/messages
+      // &$select=subject,organizer,start,end
+      // &$orderby=sentDateTime
+      // &$top=50
+      const result = await this.authService.graphClient
+        .api('/me/messages')
+        .select('subject,isRead, sender, categories')
+        .orderby('sentDateTime')
+        .top(50)
+        .get();
+
+      return result.value;
+    } catch (error) {
+      this.alertsService.addError(
+        'Could not get mail items',
+        JSON.stringify(error, null, 2)
+      );
+    }
+    return undefined;
   }
 }

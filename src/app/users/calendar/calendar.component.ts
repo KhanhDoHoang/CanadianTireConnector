@@ -15,7 +15,7 @@ import {AlertsService} from "../../alerts.service";
 })
 export class CalendarComponent implements OnInit{
   events?: any | MicrosoftGraph.Event[];
-  displayedColumns: string[] = ['organizer', 'subject', 'start', 'end'];
+  displayedColumns: string[] = ['organizer', 'subject', 'start', 'end', 'keywords'];
 
   constructor(
     private authService: AuthService,
@@ -60,5 +60,4 @@ export class CalendarComponent implements OnInit{
       return undefined;
     }
   }
-
 }
